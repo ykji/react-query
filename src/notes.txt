@@ -1,2 +1,17 @@
 useQuery
+
 devtools
+
+Query cache -  cacheTime, staleTime
+
+refetchOnMount --> true is default
+
+refetchOnWindowFocus --> true is default
+
+refetchInterval, refetchinBackground
+
+refetch --> used for user events
+
+onSuccess = (data)=>{} //////// onError = (error)=>{}
+
+Data tarnsformation ---> select:(data)=>{return transformedData}

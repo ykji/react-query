@@ -20,7 +20,7 @@ function App() {
           <Route path="/super-heroes" element={<Superheroes />} />
         </Routes>
       </div>
-      <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }
