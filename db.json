@@ -15,5 +15,33 @@
       "name": "YKJI",
       "alterEgo": "Yash Varshney"
     }
+  ],
+  "friends": [
+    { "id": 1, "name": "Chandler" },
+    { "id": 2, "name": "Joey" }
+  ],
+  "users": [
+    {
+      "id": "yvarshney44@gmail.com",
+      "channelId": "ykji"
+    }
+  ],
+  "channels": [
+    {
+      "id": "ykji",
+      "courses": ["react", "next"]
+    }
+  ],
+  "colors": [
+    { "id": 1, "label": "Red" },
+    { "id": 2, "label": "Blue" },
+    { "id": 3, "label": "Green" },
+    { "id": 4, "label": "Yellow" },
+    { "id": 5, "label": "Orange" },
+    { "id": 6, "label": "Purple" },
+    { "id": 7, "label": "Pink" },
+    { "id": 8, "label": "Teal" },
+    { "id": 9, "label": "Cyan" },
+    { "id": 10, "label": "Magenta" }
   ]
 }

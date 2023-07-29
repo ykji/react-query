@@ -15,3 +15,18 @@ refetch --> used for user events
 onSuccess = (data)=>{} //////// onError = (error)=>{}
 
 Data tarnsformation ---> select:(data)=>{return transformedData}
+
+query by id ---> eg. useQuery(["super-heroes", heroId], fetcher)
+
+parallel queries
+
+dynamic parallel queries ---> using useQueries, queryFn, queryKey which then returns queryResult (array of results)
+
+dependent queries --> use enabled for second query ie dependent query
+
+initial query data ---> use initialData in options (via queryClient)
+
+paginated queries ---> using limit and page, use keepPreviousData for keeping the previous page data on screen while bg calls
+
+infinite queries (load more) ---> use pageParam and getNextPage in options, we get data in pages->page->data format
+
