@@ -1,7 +1,9 @@
 import axios from "axios";
-import { useQuery } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 
 const fetcher = () => axios.get("http://localhost:4000/superheroes");
+
+const addhero = (hero) => axios.post("http://localhost:4000/superheroes", hero);
 
 export const useSuperHeroesData = ({ onSuccess, onError }) => {
   return useQuery("super-heroes", fetcher, {
@@ -10,7 +12,7 @@ export const useSuperHeroesData = ({ onSuccess, onError }) => {
     staleTime: 5000, // default is 0
     refetchOnMount: true,
     refetchOnWindowFocus: true,
-    refetchInterval: 3000,
+    // refetchInterval: 3000,
     refetchIntervalInBackground: false, // false is default
     onSuccess,
     onError,
@@ -20,5 +22,20 @@ export const useSuperHeroesData = ({ onSuccess, onError }) => {
     //   );
     //   return transformedData;
     // },
+  });
+};
+
+export const useAddSuperHero = () => {
+  const queryClient = useQueryClient();
+  return useMutation(addhero, {
+    onSuccess: (data) => {
+      // queryClient.invalidateQueries("super-heroes");
+      queryClient.setQueryData("super-heroes", (oldQueryData) => {
+        return {
+          ...oldQueryData,
+          data: [...oldQueryData.data, data.data],
+        };
+      });
+    },
   });
 };

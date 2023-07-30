@@ -14,11 +14,37 @@
       "id": 3,
       "name": "YKJI",
       "alterEgo": "Yash Varshney"
+    },
+    {
+      "name": "name1",
+      "alterEgo": "ego1",
+      "id": 4
+    },
+    {
+      "name": "name2",
+      "alterEgo": "ego2",
+      "id": 5
+    },
+    {
+      "name": "name2",
+      "alterEgo": "ego2",
+      "id": 6
+    },
+    {
+      "name": "nam4",
+      "alterEgo": "ego4",
+      "id": 7
     }
   ],
   "friends": [
-    { "id": 1, "name": "Chandler" },
-    { "id": 2, "name": "Joey" }
+    {
+      "id": 1,
+      "name": "Chandler"
+    },
+    {
+      "id": 2,
+      "name": "Joey"
+    }
   ],
   "users": [
     {
@@ -29,19 +55,52 @@
   "channels": [
     {
       "id": "ykji",
-      "courses": ["react", "next"]
+      "courses": [
+        "react",
+        "next"
+      ]
     }
   ],
   "colors": [
-    { "id": 1, "label": "Red" },
-    { "id": 2, "label": "Blue" },
-    { "id": 3, "label": "Green" },
-    { "id": 4, "label": "Yellow" },
-    { "id": 5, "label": "Orange" },
-    { "id": 6, "label": "Purple" },
-    { "id": 7, "label": "Pink" },
-    { "id": 8, "label": "Teal" },
-    { "id": 9, "label": "Cyan" },
-    { "id": 10, "label": "Magenta" }
+    {
+      "id": 1,
+      "label": "Red"
+    },
+    {
+      "id": 2,
+      "label": "Blue"
+    },
+    {
+      "id": 3,
+      "label": "Green"
+    },
+    {
+      "id": 4,
+      "label": "Yellow"
+    },
+    {
+      "id": 5,
+      "label": "Orange"
+    },
+    {
+      "id": 6,
+      "label": "Purple"
+    },
+    {
+      "id": 7,
+      "label": "Pink"
+    },
+    {
+      "id": 8,
+      "label": "Teal"
+    },
+    {
+      "id": 9,
+      "label": "Cyan"
+    },
+    {
+      "id": 10,
+      "label": "Magenta"
+    }
   ]
 }

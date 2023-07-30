@@ -30,3 +30,10 @@ paginated queries ---> using limit and page, use keepPreviousData for keeping th
 
 infinite queries (load more) ---> use pageParam and getNextPage in options, we get data in pages->page->data format
 
+mutation ---> useMutate returns mutate 
+
+query invalidation --> can use it to refetch data when post request is successful
+
+handle mutation reponse --> using queryClient.setQueryData
+
+optimistic updates --> onMutate, onError, onSettled

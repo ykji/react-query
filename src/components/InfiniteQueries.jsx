@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { useInfiniteQuery } from "react-query";
 
 const fetch = ({ pageParam = 1 }) =>
@@ -17,7 +17,7 @@ const InfiniteQueries = () => {
   } = useInfiniteQuery("colors", fetch, {
     getNextPageParam: (_lastPage, pages) => {
       if (pages.length < 5) {
-        return pages.length + 1;
+        return pages.length + 1;  
       } else {
         return undefined;
       }
