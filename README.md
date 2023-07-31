@@ -3,7 +3,8 @@
 - Making query using useQuery
 - Using devtools
 - Manipulating cache using cacheTime and staleTime
-- Refetching on various websites' states
+- Refetching on various websites' states (window focus, refetch on mount)
+- Polling (refetchInterval)
 - Refetching programmatically
 - Data transformations
 - Quering by Id
